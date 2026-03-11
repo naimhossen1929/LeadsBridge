@@ -4,9 +4,193 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LeadsBridge || Your Full Service Amazon Partner</title>
+
+    <!-- -----Daisy and Tailwind link------- -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- ------------------Google font link ---------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- -------------------Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- -------------CSS Link ------->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ------------Fav icon ----------- -->
+    <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <header></header>
+    <header class="bg-linear-to-t from-[#FFA5007A] to-white">
+      <!-- ------------------------------NavBar Start Here----------------------------- -->
+      <nav class="pt-4 w-10/12 mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-outline btn-warning lg:hidden mr-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a class="text-[#4F4D4D]">Services</a></li>
+                <li><a class="text-[#4F4D4D]">About</a></li>
+                <li><a class="text-[#4F4D4D]">Contact</a></li>
+              </ul>
+            </div>
+            <a href="" class=""><img src="assets/logo.svg" alt="" /></a>
+          </div>
+
+          <div class="navbar-end lg:flex lg:items-center">
+            <ul class="hidden lg:flex menu-horizontal space-x-8 px-1 mr-12">
+              <li>
+                <div class="relative">
+                  <span class="invisible font-medium">Services</span>
+                  <a
+                    class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    >Services</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="relative">
+                  <span class="invisible font-medium">About</span>
+                  <a
+                    class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    >About</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="relative">
+                  <span class="invisible font-medium">Contact</span>
+                  <a
+                    class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    >Contact</a
+                  >
+                </div>
+              </li>
+            </ul>
+            <button class="common-btn-black">Book a Free Consultation</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- -----------------------Hero Section ------------------------- -->
+      <section class="relative overflow-hidden pt-12 pb-32">
+        <div class="text-center w-10/12 md:w-[700px] lg:w-[820px] mx-auto">
+          <!-- --------------------Subtitle Styles (shared)------- -->
+          <div class="flex justify-center items-center gap-x-2">
+            <img class="text-center" src="assets/amazon_logo.svg" alt="" />
+            <p class="text-[#151515] tracking-tight leading-6">
+              Your Full-Service
+              <span class="text-[#FFA500]">Amazon Partner</span>
+            </p>
+          </div>
+          <h1
+            class="text-[#151515] font-semibold text-3xl md:text-5xl lg:text-7xl tracking-tight md:leading-[60px] lg:leading-[80px] mt-4 mb-10"
+          >
+            Turn Your Amazon Struggles into Success—Save Time,
+            <span class="text-[#FFA500]">Maximize Profits!</span>
+          </h1>
+          <button class="common-btn-black">Book a Free Consultation</button>
+        </div>
+        <!-- Total Income -->
+        <div
+          class="rounded-2xl bg-white shadow-2xl absolute md:left-7 left-14 md:top-2/3 lg:top-1/2 -translate-y-1/2 -rotate-12 p-4 w-48 text-left hidden md:block lg:block"
+        >
+          <p class="font-medium text-[#151515] mb-5">Total Incomes</p>
+
+          <div class="flex items-end gap-3 h-16">
+            <div class="w-4 bg-gray-200 rounded h-10"></div>
+            <div class="w-4 bg-gray-200 rounded h-16"></div>
+            <div class="w-4 bg-gray-200 rounded h-8"></div>
+            <div class="w-4 bg-[#FFA500] rounded h-16"></div>
+            <div class="w-4 bg-gray-200 rounded h-8"></div>
+            <div class="w-4 bg-gray-200 rounded h-12"></div>
+          </div>
+
+          <div class="flex gap-3 mt-1">
+            <span class="w-4 text-[8px] text-gray-400 text-center">Jan</span>
+            <span class="w-4 text-[8px] text-gray-400 text-center">Feb</span>
+            <span class="w-4 text-[8px] text-gray-400 text-center">Mar</span>
+            <span class="w-4 text-[8px] text-gray-400 text-center">Apr</span>
+            <span class="w-4 text-[8px] text-gray-400 text-center">May</span>
+            <span class="w-4 text-[8px] text-gray-400 text-center">Jun</span>
+          </div>
+        </div>
+
+        <!-- Avatar -->
+        <div
+          class="rounded-2xl bg-white shadow-2xl absolute md:right-7 right-14 md:top-1/2 lg:top-1/3 rotate-12 -translate-y-1/2 p-3 w-48 text-left hidden md:block lg:block"
+        >
+          <div class="flex justify-center items-center gap-x-2">
+            <div>
+              <div class="flex -space-x-2 mb-2">
+                <img
+                  class="w-7 h-7 rounded-full ring-2 ring-white object-cover"
+                  src="https://i.pravatar.cc/40?img=1"
+                  alt="user"
+                />
+                <img
+                  class="w-7 h-7 rounded-full ring-2 ring-white object-cover"
+                  src="https://i.pravatar.cc/40?img=2"
+                  alt="user"
+                />
+                <img
+                  class="w-7 h-7 rounded-full ring-2 ring-white object-cover"
+                  src="https://i.pravatar.cc/40?img=3"
+                  alt="user"
+                />
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-xl text-[#151515]">45+ Users</h4>
+              <p>
+                <i class="fa-solid fa-star text-[#FFA500]"></i>
+                <span class="font-medium text-[#666666] text-sm"
+                  >4.7 Rating</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>

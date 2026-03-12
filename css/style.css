@@ -17,13 +17,15 @@ body {
   border-bottom: 3px solid black;
   border-radius: 40px;
   cursor: pointer;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   transition: all 0.3s ease;
+  transform-origin: center;
 }
 
 .common-btn-black:hover {
   background-color: white;
   color: #ffa500;
-  border: 1px solid #ffa500;
+  border-right: 3px solid #ffa500;
+  border-bottom: 3px solid #ffa500;
   transform: scale(1.05);
 }

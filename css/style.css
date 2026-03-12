@@ -22,10 +22,28 @@ body {
   transform-origin: center;
 }
 
-.common-btn-black:hover {
+.common-btn-black:hover,
+.common-btn-white:hover {
   background-color: white;
   color: #ffa500;
   border-right: 3px solid #ffa500;
   border-bottom: 3px solid #ffa500;
   transform: scale(1.05);
+}
+
+.common-btn-white {
+  width: 189px;
+  background-color: #ffa500;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 40px;
+  cursor: pointer;
+  letter-spacing: -0.02em;
+  transition: all 0.3s ease;
+  transform-origin: center;
 }

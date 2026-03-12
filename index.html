@@ -37,9 +37,9 @@
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <header class="bg-linear-to-t from-[#FFA5007A] to-white">
+    <header id="home" class="bg-linear-to-t from-[#FFA5007A] to-white">
       <!-- ------------------------------NavBar Start Here----------------------------- -->
-      <nav class="pt-4 w-10/12 mx-auto">
+      <nav class="pt-6 w-10/12 mx-auto">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -67,12 +67,12 @@
                 tabindex="-1"
                 class="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-                <li><a class="text-[#4F4D4D]">Services</a></li>
-                <li><a class="text-[#4F4D4D]">About</a></li>
-                <li><a class="text-[#4F4D4D]">Contact</a></li>
+                <li><a class="text-[#4F4D4D]" href="#service">Services</a></li>
+                <li><a class="text-[#4F4D4D]" href="#approach">About</a></li>
+                <li><a class="text-[#4F4D4D]" href="#contact">Contact</a></li>
               </ul>
             </div>
-            <a href="" class=""><img src="assets/logo.svg" alt="" /></a>
+            <a href="#home" class=""><img src="assets/logo.svg" alt="" /></a>
           </div>
 
           <div class="navbar-end lg:flex lg:items-center">
@@ -82,6 +82,7 @@
                   <span class="invisible font-medium">Services</span>
                   <a
                     class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    href="#service"
                     >Services</a
                   >
                 </div>
@@ -91,6 +92,7 @@
                   <span class="invisible font-medium">About</span>
                   <a
                     class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    href="#approach"
                     >About</a
                   >
                 </div>
@@ -100,18 +102,21 @@
                   <span class="invisible font-medium">Contact</span>
                   <a
                     class="absolute inset-0 cursor-pointer text-[#4F4D4D] hover:font-medium hover:text-[#FFA500] transition duration-200"
+                    href="#contact"
                     >Contact</a
                   >
                 </div>
               </li>
             </ul>
-            <button class="common-btn-black">Book a Free Consultation</button>
+            <button class="common-btn-black">
+              <a href="#contact">Book a Free Consultation</a>
+            </button>
           </div>
         </div>
       </nav>
 
       <!-- -----------------------Hero Section ------------------------- -->
-      <section class="relative overflow-hidden pt-12 pb-32">
+      <section class="relative overflow-hidden pt-32 pb-32">
         <div class="text-center w-10/12 md:w-[700px] lg:w-[820px] mx-auto">
           <!-- --------------------Subtitle Styles (shared)------- -->
           <div class="flex justify-center items-center gap-x-2">
@@ -272,7 +277,7 @@
       </section>
 
       <!-- -----------------Why Choose FINTRIXX ---------------------->
-      <section class="bg-black py-24">
+      <section id="why-choose" class="bg-black py-24">
         <div
           class="w-10/12 mx-auto flex flex-col-reverse lg:flex-row justify-between items-center gap-10"
         >
@@ -316,7 +321,7 @@
       </section>
 
       <!-- --------------------Our Services -------------------------------- -->
-      <section class="py-20">
+      <section id="service" class="py-20">
         <div class="w-10/12 mx-auto space-y-10">
           <div class="flex justify-center items-center gap-x-2">
             <img class="text-center" src="assets/amazon_logo.svg" alt="" />
@@ -445,7 +450,7 @@
       </section>
 
       <!-- ------------------Our Approach---------------- -->
-      <section class="bg-black py-24">
+      <section id="approach" class="bg-black py-24">
         <div
           class="w-10/12 mx-auto flex flex-col justify-center items-center lg:flex-row gap-12"
         >
@@ -717,7 +722,124 @@
           </div>
         </div>
       </section>
+
+      <!-- ------------------Contact Us-------------------- -->
+      <section id="contact" class="py-24 overflow-x-hidden">
+        <div class="w-10/12 mx-auto">
+          <div class="flex justify-center items-center gap-x-2">
+            <img class="text-center" src="assets/amazon_logo.svg" alt="" />
+            <p class="text-[#FFA500] tracking-tight leading-6">
+              Contact
+              <span class="text-[#151515]">Us</span>
+            </p>
+          </div>
+          <h1
+            class="text-[#151515] font-semibold text-center text-4xl md:text-6xl tracking-tight leading-[64px] mt-4 mb-5"
+          >
+            Let’s Scale Your
+            <span class="text-[#FFA500]">Business!</span>
+          </h1>
+          <div class="flex justify-center items-center mb-12">
+            <p
+              class="w-[500px] text-center text-lg tracking-tight leading-7 text-[#151515]"
+            >
+              FINTRIXX – Your Amazon Growth Partner
+            </p>
+          </div>
+
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/naiminvideo/book-your-strategy-session-accelerate-your-growth"
+            style="min-width: 320px; height: 700px"
+          ></div>
+
+          <div
+            class="flex flex-col lg:flex-row justify-center items-center gap-5 text-center"
+          >
+            <p class="text-[#151515] leading-6 tracking-tight">
+              <i class="fa-regular fa-envelope"></i>
+              leadsbridgesdemo@example.com
+            </p>
+            <p class="text-[#151515] leading-6 tracking-tight">
+              <span class="text-[#FFA500]">Note:</span> Have a question? Need a
+              strategy? We’re here to help.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="bg-black py-24">
+      <div class="w-10/12 mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start gap-y-3"
+        >
+          <div class="">
+            <img src="assets/logo.svg" alt="" />
+            <p class="text-white leading-6 tracking-tight mt-5 w-80">
+              FINTRIXX – Your Amazon Growth Partner Since 2016, we boost Amazon
+              success with expert SEO, PPC, and growth strategies.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row justify-center items-start gap-20"
+          >
+            <div class="flex flex-col gap-y-5">
+              <h5
+                class="text-white font-semibold text-xl leading-7 tracking-tight"
+              >
+                Home
+              </h5>
+              <a class="text-white hover:underline" href="#home">Home</a
+              ><a class="text-white hover:underline" href="#approach">About</a
+              ><a class="text-white hover:underline" href="#service">Services</a
+              ><a href="#why-choose" class="text-white hover:underline"
+                >Why Choose Us</a
+              ><a href="#contact" class="text-white hover:underline">Contact</a>
+            </div>
+
+            <div class="flex flex-col gap-y-5">
+              <h5
+                class="text-white font-semibold text-xl leading-7 tracking-tight"
+              >
+                Contact
+              </h5>
+              <p class="text-white leading-6 tracking-tight">
+                <i class="fa-regular fa-envelope"></i>
+                leadsbridgesdemo@example.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-8" />
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-start gap-y-4"
+        >
+          <div>
+            <p class="text-white leading-6 tracking-tight">
+              &copy;2025 Copyright Amazon
+            </p>
+          </div>
+          <div class="flex justify-center items-center gap-8">
+            <a href="" class="text-white leading-6 tracking-tight"
+              >Privacy Policy</a
+            >
+            <a href="" class="text-white leading-6 tracking-tight"
+              >Terms & Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Calendly script link -->
+    <script
+      type="text/javascript"
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
   </body>
 </html>
